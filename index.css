@@ -40,6 +40,9 @@
     border-width: 0px;
     background-color: rgb(40, 47, 56);
     color: white;
+    width: 1000px;
+    margin-right: 10px;
+    height: 40px;
 }
 
 
@@ -66,3 +69,4 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
+

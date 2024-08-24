@@ -35,7 +35,7 @@ function getTaskComponent(taskItem, index) {
         ${decideEditOrDetail(taskItem, index)}
         <div>
             <button type="button" class = "btn btn-m btn-warning" onclick=editOrSave(${index}) >${taskItem.isEditing ? "Save" : "Edit"}</button>
-            <button type="button" class = "btn btn-m btn-danger" onclick="deleteNode(${index})" >Delete</button>
+            <button type="button" class = "btn btn-m btn-danger" onclick=deleteNode(${index}) >Delete</button>
         </div>
     </div>
 `
@@ -49,7 +49,7 @@ function decideEditOrDetail(taskItem, index) {
     } else {
         return `<div class="d-flex p-2">
         <input type="checkbox" onclick="checkedTask(${index})" ${taskItem.checked ? "checked" : ""} class="checkBox"/>
-        <span>sdfsdf</span>
+        <span>${taskItem.title}</span>
     </div>`
     }
 }
