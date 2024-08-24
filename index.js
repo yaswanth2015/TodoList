@@ -44,7 +44,7 @@ function getTaskComponent(taskItem, index) {
 function decideEditOrDetail(taskItem, index) {
     if(taskItem.isEditing) {
         return `
-            <input placeholder="Enter your Task" class = "taskInput" value = ${taskItem.title} id = "list-${index}"></Input>
+            <input placeholder="Enter your Task" class = "taskInput" value = "${taskItem.title}" id = "list-${index}"></Input>
         `
     } else {
         return `<div class="d-flex p-2">
